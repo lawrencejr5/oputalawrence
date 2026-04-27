@@ -1,66 +1,129 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
+
+const socials = [
+  {
+    name: "GitHub",
+    icon: "/images/icons/github.png",
+    href: "https://github.com/oputalawrence",
+  },
+  {
+    name: "LinkedIn",
+    icon: "/images/icons/linkedin.png",
+    href: "https://linkedin.com/in/oputalawrence",
+  },
+  {
+    name: "Twitter",
+    icon: "/images/icons/twitter.png",
+    href: "https://twitter.com/oputalawrence",
+  },
+  {
+    name: "Threads",
+    icon: "/images/icons/threads.png",
+    href: "https://threads.net/@oputalawrence",
+  },
+  {
+    name: "WhatsApp",
+    icon: "/images/icons/whatsapp.png",
+    href: "https://wa.me/oputalawrence",
+  },
+];
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <>
+      {/* Fixed background */}
+      <div className={styles.background}>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+          src="/images/backgrounds/background_1.jpg"
+          alt=""
+          fill
+          className={styles.backgroundImage}
+          loading="eager"
+          quality={80}
         />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+      </div>
+      <div className={styles.backgroundOverlay} />
+
+      {/* Content */}
+      <div className={styles.container} id="home-content">
+        <div className={styles.card}>
+          <p className={styles.greeting}>
+            <span className={styles.wave}>👋</span> Hello there, mate
           </p>
+
+          <h1 className={styles.headline}>
+            I&apos;m <span className={styles.name}>Oputa Lawrence</span>, a{" "}
+            <span className={styles.highlight}>Software &amp; AI Engineer</span>{" "}
+            specialized in building high performance mobile and web products.
+          </h1>
+
+          <p className={styles.subtitle}>
+            Currently the lead engineer at{" "}
+            <a
+              href="https://lawjunlabs.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.labsLink}
+            >
+              Lawjun Labs
+            </a>{" "}
+            — my mini startup where we ship things that matter.
+          </p>
+
+          <hr className={styles.divider} />
+
+          <div className={styles.cta}>
+            <div className={styles.ctaRow}>
+              <span className={styles.ctaEmoji}>🤖</span>
+              <p className={styles.ctaText}>
+                If you&apos;re a bot,{" "}
+                <a
+                  href="mailto:hello@oputalawrence.com?subject=Your%20bot%20says%20hi"
+                  className={styles.botLink}
+                >
+                  click here
+                </a>{" "}
+                and tell your creator I said hi.
+              </p>
+            </div>
+
+            <div className={styles.ctaRow}>
+              <span className={styles.ctaEmoji}>🧑‍💻</span>
+              <p className={styles.ctaText}>
+                If you&apos;re human, I&apos;m assuming you value craft over
+                scripts,{" "}
+                <Link href="/works" className={styles.botLink}>
+                  check out my works
+                </Link>{" "}
+                and let&apos;s connect.
+              </p>
+            </div>
+
+            <div className={styles.socials} id="social-links">
+              {socials.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.name}
+                  title={social.name}
+                >
+                  <Image
+                    src={social.icon}
+                    alt={social.name}
+                    width={20}
+                    height={20}
+                    className={styles.socialIcon}
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </div>
+    </>
   );
 }
