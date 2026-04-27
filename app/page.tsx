@@ -36,7 +36,7 @@ export default function Home() {
       {/* Fixed background */}
       <div className={styles.background}>
         <Image
-          src="/images/backgrounds/background_1.jpg"
+          src="/images/backgrounds/background_3.jpg"
           alt=""
           fill
           className={styles.backgroundImage}
@@ -56,7 +56,8 @@ export default function Home() {
           <h1 className={styles.headline}>
             I&apos;m <span className={styles.name}>Oputa Lawrence</span>, a{" "}
             <span className={styles.highlight}>Software &amp; AI Engineer</span>{" "}
-            specialized in building high performance mobile and web products.
+            specialized in building high performance mobile and web products
+            with <span className={styles.highlight}>Typescript</span>.
           </h1>
 
           <p className={styles.subtitle}>

@@ -1,0 +1,343 @@
+/* ─── Fixed background ─── */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.backgroundImage {
+  object-fit: cover;
+  opacity: 0.25;
+}
+
+.backgroundOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    rgba(40, 40, 43, 0.5) 50%,
+    rgba(40, 40, 43, 0.97) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ─── Page wrapper ─── */
+.page {
+  position: relative;
+  z-index: 5;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 3rem 6rem;
+  animation: fadeIn 0.6s ease-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Section Header ─── */
+.sectionLabel {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sectionLabel::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(242, 176, 100, 0.15);
+}
+
+/* ─── Featured Project ─── */
+.featured {
+  margin-bottom: 4rem;
+}
+
+.featuredCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  background: rgba(255, 253, 208, 0.03);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: border-color 0.4s ease;
+}
+
+.featuredCard:hover {
+  border-color: rgba(242, 176, 100, 0.25);
+}
+
+.featuredImageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.featuredImage {
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.featuredCard:hover .featuredImage {
+  transform: scale(1.03);
+}
+
+.featuredContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.75rem;
+}
+
+.company {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+.projectTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.projectDesc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.stackTag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  background: rgba(242, 176, 100, 0.08);
+  border: 1px solid rgba(242, 176, 100, 0.15);
+  color: var(--primary);
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.25rem;
+  margin-top: auto;
+  /* padding-top: 1.5rem; */
+}
+
+.projectLink {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.linkIcon {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+
+.projectLink:hover .linkIcon {
+  opacity: 1;
+}
+
+.projectLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.projectLink:hover {
+  color: var(--primary);
+}
+
+.projectLink:hover::after {
+  width: 100%;
+}
+
+.linkArrow {
+  font-size: 0.85rem;
+  transition: transform 0.3s ease;
+}
+
+.projectLink:hover .linkArrow {
+  transform: translateX(2px);
+}
+
+/* ─── Other Projects Grid ─── */
+.otherProjects {
+  margin-bottom: 2rem;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.projectCard {
+  background: rgba(255, 253, 208, 0.03);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard:hover {
+  border-color: rgba(242, 176, 100, 0.25);
+  transform: translateY(-4px);
+}
+
+.cardImageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.cardImage {
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.projectCard:hover .cardImage {
+  transform: scale(1.04);
+}
+
+.cardContent {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.cardContent .company {
+  font-size: 0.65rem;
+}
+
+.cardContent .projectTitle {
+  font-size: 1.25rem;
+}
+
+.cardContent .projectDesc {
+  font-size: 0.825rem;
+  line-height: 1.65;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cardContent .stack {
+  margin-top: 0.5rem;
+}
+
+.cardContent .projectLinks {
+  margin-top: 0.75rem;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .featuredCard {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 1.5rem 1.5rem 6rem;
+  }
+
+  .featuredCard {
+    padding: 1.25rem;
+  }
+
+  .projectTitle {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 1rem 1rem 6rem;
+  }
+
+  .featuredCard {
+    padding: 1rem;
+  }
+
+  .projectTitle {
+    font-size: 1.2rem;
+  }
+
+  .projectDesc {
+    font-size: 0.8rem;
+  }
+  .sectionLabel {
+    font-size: 1rem;
+  }
+}
