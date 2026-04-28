@@ -67,7 +67,6 @@ export default function Works() {
           fill
           className={styles.backgroundImage}
           loading="eager"
-          quality={80}
         />
       </div>
       <div className={styles.backgroundOverlay} />
@@ -83,12 +82,12 @@ export default function Works() {
                 alt={`${featuredProject.title} screenshots`}
                 fill
                 className={styles.featuredImage}
-                quality={90}
               />
             </div>
             <div className={styles.featuredContent}>
-              <span className={styles.company}>{featuredProject.company}</span>
-              <h2 className={styles.projectTitle}>{featuredProject.title}</h2>
+              <h2 className={styles.projectTitle}>
+                {featuredProject.title} - {featuredProject.company}
+              </h2>
               <p className={styles.projectDesc}>
                 {featuredProject.description}
               </p>
@@ -149,12 +148,12 @@ export default function Works() {
                     alt={`${project.title} screenshots`}
                     fill
                     className={styles.cardImage}
-                    quality={85}
                   />
                 </div>
                 <div className={styles.cardContent}>
-                  <span className={styles.company}>{project.company}</span>
-                  <h3 className={styles.projectTitle}>{project.title}</h3>
+                  <h3 className={styles.projectTitle}>
+                    {project.title} - {project.company}
+                  </h3>
                   <p className={styles.projectDesc}>{project.description}</p>
                   <div className={styles.stack}>
                     {project.stack.map((tech) => (
