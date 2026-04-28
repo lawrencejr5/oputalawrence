@@ -1,0 +1,249 @@
+/* ─── Fixed background ─── */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.backgroundImage {
+  object-fit: cover;
+  opacity: 0.25;
+}
+
+.backgroundOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    rgba(40, 40, 43, 0.5) 50%,
+    rgba(40, 40, 43, 0.97) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ─── Page wrapper ─── */
+.page {
+  position: relative;
+  z-index: 5;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 3rem 8rem;
+  animation: fadeIn 0.6s ease-out both;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Image Section ─── */
+.imageSection {
+  position: sticky;
+  top: 6rem;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.profileImage {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.imageWrapper:hover .profileImage {
+  transform: scale(1.02);
+}
+
+/* ─── Content Section ─── */
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.highlight {
+  color: var(--primary);
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: var(--primary);
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.bio {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* ─── Resume Link ─── */
+.resumeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  align-self: flex-end;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.resumeLink:hover {
+  opacity: 0.8;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.resumeLink:hover .arrow {
+  transform: translateX(4px);
+}
+
+
+/* ─── Stack Section ─── */
+.stackSection {
+  grid-column: 1 / -1;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.stackTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stackTitle::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(242, 176, 100, 0.15);
+}
+
+.stackGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.stackItem {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  background: rgba(255, 253, 208, 0.05);
+  border: 1px solid rgba(255, 253, 208, 0.1);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+.stackItem:hover {
+  background: rgba(242, 176, 100, 0.1);
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .imageSection {
+    position: static;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 1rem;
+    z-index: 6;
+  }
+
+  .imageWrapper {
+    aspect-ratio: 1 / 1;
+    border-radius: 20px;
+    min-height: 300px;
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 6rem 1.5rem 6rem; /* Increased top padding for mobile */
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .bio {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 1rem 1rem 6rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+}

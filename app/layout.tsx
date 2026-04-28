@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Oputa Lawrence — Software & AI Engineer",
   description:
     "Portfolio of Oputa Lawrence, a software & AI engineer specialized in building high performance mobile and web products. Lead engineer at Lawjun Labs.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

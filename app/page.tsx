@@ -6,27 +6,27 @@ const socials = [
   {
     name: "GitHub",
     icon: "/images/icons/github.png",
-    href: "https://github.com/oputalawrence",
+    href: "https://github.com/lawrencejr5",
   },
   {
     name: "LinkedIn",
     icon: "/images/icons/linkedin.png",
-    href: "https://linkedin.com/in/oputalawrence",
+    href: "https://www.linkedin.com/in/oputa-lawrence",
   },
   {
-    name: "Twitter",
-    icon: "/images/icons/twitter.png",
-    href: "https://twitter.com/oputalawrence",
+    name: "Email",
+    icon: "/images/icons/email.png",
+    href: "mailto:oputalawrence@gmail.com",
   },
   {
     name: "Threads",
     icon: "/images/icons/threads.png",
-    href: "https://threads.net/@oputalawrence",
+    href: "https://threads.net/@oputa_lawrence",
   },
   {
     name: "WhatsApp",
     icon: "/images/icons/whatsapp.png",
-    href: "https://wa.me/oputalawrence",
+    href: "https://wa.me/2349025816161",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function Home() {
           <p className={styles.subtitle}>
             Currently the lead engineer at{" "}
             <a
-              href="https://lawjunlabs.com"
+              href="https://lawjun.ng"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.labsLink}
