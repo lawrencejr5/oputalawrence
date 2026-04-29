@@ -23,6 +23,41 @@ const techStack = [
   { name: "Firebase", icon: "/images/stack/firebase.svg" },
 ];
 
+const experiences = [
+  {
+    company: "Lawjun Labs (My Startup)",
+    role: "Lead Engineer",
+    duration: "May 2025 – Present",
+    url: "https://lawjun.ng",
+    description:
+      "As the technical lead at Lawjun Labs, I am currently focused on architecting and shipping AI-driven products like Snoopa and Habibee. My role involves overseeing the entire product lifecycle—from conceptualizing intelligent features to deploying scalable mobile and web solutions using React Native, TypeScript, and Convex.",
+  },
+  {
+    company: "Yan Kontent Factory (NYSC)",
+    role: "Video Editor & Developer",
+    duration: "May 2024 – April 2025",
+    url: "https://yankontentfactory.com/",
+    description:
+      "During my NYSC service, I worked as a creative intern where I mastered Adobe Premiere Pro for cinematography and editing. Recognizing a gap in the company’s workflow, I took the initiative to build Yanhub, a custom web application designed to track and manage the status of video projects from shooting to final delivery.",
+  },
+  {
+    company: "Nexainnova (Remote)",
+    role: "Fullstack Developer",
+    duration: "August 2023 – May 2024",
+    url: "http://nexainnova.com/",
+    description:
+      "Immediately after university, I joined this remote startup to help build and ship production-ready applications. As a Fullstack Developer, I spent my time in the trenches of high-velocity development, leveraging my skills in PHP and modern web frameworks to deliver robust backend solutions for various client projects.",
+  },
+  {
+    company: "Coriftech Solutions (Internship)",
+    role: "Software Developer Intern",
+    duration: "March 2021 – September 2021",
+    url: "https://coriftech.com/",
+    description:
+      "I began my professional career with a six-month intensive internship during my third year of university. This period was pivotal for my growth, as I mastered the fundamentals of PHP development and gained my first leadership experience by tutoring junior secondary students on the basics of programming and logic.",
+  },
+];
+
 export default function About() {
   return (
     <>
@@ -77,8 +112,8 @@ export default function About() {
               <strong>&quot;build-and-ship&quot; philosophy</strong>: from{" "}
               <strong>GoBook</strong>—a social media platform I developed for my
               university as my final year project—to <strong>Habibee</strong>, a
-              productivity-focused tool that let's users keep streaks and build
-              new habits to <strong>Snoopa</strong>, an AI agent built to
+              productivity-focused tool that let&apos;s users keep streaks and
+              build new habits to <strong>Snoopa</strong>, an AI agent built to
               revolutionize how we track and verify information.
             </p>
             <p>
@@ -104,7 +139,7 @@ export default function About() {
         </section>
 
         <div className={styles.stackSection}>
-          <h2 className={styles.stackTitle}>My Tech Stack</h2>
+          <h2 className={styles.sectionTitle}>My Tech Stack</h2>
           <div className={styles.stackGrid}>
             {techStack.map((tech) => (
               <div key={tech.name} className={styles.stackItem}>
@@ -124,6 +159,33 @@ export default function About() {
                   </div>
                 )}
                 <span className={styles.techName}>{tech.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Experiences Section */}
+        <div className={styles.experienceSection}>
+          <h2 className={styles.sectionTitle}>My Experiences</h2>
+          <div className={styles.experienceTimeline}>
+            {experiences.map((exp, index) => (
+              <div key={index} className={styles.experienceItem}>
+                <div className={styles.experienceDate}>{exp.duration}</div>
+                <div className={styles.experienceContent}>
+                  <div className={styles.experienceHeader}>
+                    <h3 className={styles.experienceCompany}>{exp.company}</h3>
+                    <span className={styles.experienceRole}>{exp.role}</span>
+                  </div>
+                  <p className={styles.experienceDesc}>{exp.description}</p>
+                  <a
+                    href={exp.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.visitLink}
+                  >
+                    Visit Company <span className={styles.arrow}>→</span>
+                  </a>
+                </div>
               </div>
             ))}
           </div>
