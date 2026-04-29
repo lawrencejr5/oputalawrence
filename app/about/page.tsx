@@ -9,16 +9,18 @@ export const metadata: Metadata = {
 };
 
 const techStack = [
-  "React",
-  "Next.js",
-  "React Native",
-  "Node.js",
-  "MongoDB",
-  "Convex",
-  "TypeScript",
-  "Canva",
-  "Vercel",
-  "Antigravity",
+  { name: "TypeScript", icon: "/images/stack/typescript.svg" },
+  { name: "React Native", icon: "/images/stack/react_dark.svg" },
+  { name: "Next.js", icon: "/images/stack/nextjs_icon_dark.svg" },
+  { name: "Node.js", icon: "/images/stack/nodejs.svg" },
+  { name: "MongoDB", icon: "/images/stack/mongodb-icon-dark.svg" },
+  { name: "Convex", icon: "/images/stack/convex.svg" },
+  { name: "Git", icon: "/images/stack/git.svg" },
+  { name: "Canva", icon: "/images/stack/canva.svg" },
+  { name: "Vercel", icon: "/images/stack/vercel_dark.svg" },
+  { name: "Antigravity", icon: "/images/stack/antigravity.svg" },
+  { name: "Render", icon: "/images/stack/render_white.svg" },
+  { name: "Firebase", icon: "/images/stack/firebase.svg" },
 ];
 
 export default function About() {
@@ -32,7 +34,6 @@ export default function About() {
           fill
           className={styles.backgroundImage}
           loading="eager"
-          quality={80}
         />
       </div>
       <div className={styles.backgroundOverlay} />
@@ -60,23 +61,35 @@ export default function About() {
 
           <div className={styles.bio}>
             <p>
-              I&apos;m a Software and AI Engineer based in Asaba, originally
-              from Aboh, Delta State. Currently, I&apos;m pouring my energy into
-              building <strong>Lawjun Labs</strong>—my own mini-startup focused
-              on shipping products that make a real impact.
+              I’m a <strong>Software and AI Engineer</strong> based in{" "}
+              <strong>Asaba, Delta State</strong> (originally from Aboh), with a
+              drive for building products that matter. I graduated from{" "}
+              <strong>Godfrey Okoye University</strong> with a degree in{" "}
+              <strong>Computer Science</strong> and a <strong>4.15 CGPA</strong>
+              , a journey that solidified my technical foundation and fueled my
+              transition into the world of entrepreneurship. Today, I’m the
+              founder of <strong>Lawjun Labs</strong>, where I focus on shipping
+              intelligent, high-impact solutions.
             </p>
             <p>
-              I thrive on tackling complex challenges and crafting elegant,
-              scalable solutions. But my interests extend far beyond the code
-              editor. I have a deep fascination with psychology and history,
-              constantly exploring how the past and the human mind shape our
-              world.
+              I thrive on tackling complex challenges and turning them into{" "}
+              <strong>elegant, scalable code</strong>. My portfolio reflects a{" "}
+              <strong>&quot;build-and-ship&quot; philosophy</strong>: from{" "}
+              <strong>GoBook</strong>—a social media platform I developed for my
+              university as my final year project—to <strong>Habibee</strong>, a
+              productivity-focused tool that let's users keep streaks and build
+              new habits to <strong>Snoopa</strong>, an AI agent built to
+              revolutionize how we track and verify information.
             </p>
             <p>
-              I&apos;m an avid football fan (Hala Madrid!) and will always have
-              a special appreciation for the Gareth Bale era. I consider myself
-              a highly versatile individual with a diverse palate—I love
-              exploring different tastes in music, films, food, and culture.
+              Beyond the code editor, I’m a student of the world. I have a deep
+              fascination with <strong>psychology and history</strong>,
+              constantly exploring how the human mind and our past shape the
+              present. When I’m not building, you’ll find me cheering for{" "}
+              <strong>Real Madrid</strong> (<strong>Hala Madrid!</strong>) and
+              huge fan of <strong>Gareth Bale</strong>. I consider myself a{" "}
+              <strong>versatile explorer of culture</strong>, with a diverse
+              palate for music, films, and food that keeps my perspective fresh.
             </p>
           </div>
 
@@ -94,9 +107,24 @@ export default function About() {
           <h2 className={styles.stackTitle}>My Tech Stack</h2>
           <div className={styles.stackGrid}>
             {techStack.map((tech) => (
-              <span key={tech} className={styles.stackItem}>
-                {tech}
-              </span>
+              <div key={tech.name} className={styles.stackItem}>
+                {tech.icon ? (
+                  <div className={styles.techIcon}>
+                    <Image
+                      src={tech.icon}
+                      alt={tech.name}
+                      width={32}
+                      height={32}
+                      className={styles.iconImage}
+                    />
+                  </div>
+                ) : (
+                  <div className={styles.techPlaceholder}>
+                    {tech.name.charAt(0)}
+                  </div>
+                )}
+                <span className={styles.techName}>{tech.name}</span>
+              </div>
             ))}
           </div>
         </div>
