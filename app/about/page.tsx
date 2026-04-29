@@ -129,7 +129,7 @@ export default function About() {
           </div>
 
           <a
-            href="https://drive.google.com/file/d/14elV06TENpPtigYSw0LkMxnU6puaEfMn/view?usp=drive_link"
+            href="/oputa-lawrence-cv-2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.resumeLink}
