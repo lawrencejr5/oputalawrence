@@ -14,6 +14,7 @@ interface Project {
   title: string;
   description: string;
   image: string;
+  icon: string;
   stack: string[];
   liveUrl: string;
   githubUrl?: string;
@@ -26,6 +27,7 @@ const featuredProject: Project = {
   description:
     "A conversational AI agent that tracks the topics you care about. From injury reports to market shifts, Snoopa monitors the front page of the web 24/7 and pings you the moment something changes. Don't search — just snoop.",
   image: "/images/projects/snoopa_1.png",
+  icon: "/images/projects/snoopa-icon.png",
   stack: ["React Native", "Convex"],
   liveUrl: "https://snoopa.lawjun.ng/",
   githubUrl: "https://github.com/lawrencejr5/snoopa",
@@ -39,6 +41,7 @@ const otherProjects: Project[] = [
     description:
       "The all-in-one app for reliable rides and swift package deliveries. Go anywhere, grab anything — with real-time tracking, instant fare estimates, and seamless driver matching.",
     image: "/images/projects/igle_2.png",
+    icon: "/images/projects/igle-icon.png",
     stack: ["React Native", "Node.js", "MongoDB"],
     liveUrl: "https://igleride.com/",
     githubUrl: "https://github.com/lawrencejr5/igle",
@@ -50,6 +53,7 @@ const otherProjects: Project[] = [
     description:
       "Build atomic habits, track streaks with beautiful activity grids, get AI-powered coaching, and stay accountable with your inner circle — all in one app.",
     image: "/images/projects/habibee_1.png",
+    icon: "/images/projects/habibee-icon.png",
     stack: ["React Native", "Convex"],
     liveUrl: "https://habibee.lawjun.ng/",
     githubUrl: "https://github.com/lawrencejr5/habibee",
@@ -85,9 +89,20 @@ export default function Works() {
               />
             </div>
             <div className={styles.featuredContent}>
-              <h2 className={styles.projectTitle}>
-                {featuredProject.title} - {featuredProject.company}
-              </h2>
+              <div className={styles.projectTitleRow}>
+                <div className={styles.projectIcon}>
+                  <Image
+                    src={featuredProject.icon}
+                    alt=""
+                    width={32}
+                    height={32}
+                    style={{ borderRadius: "8px" }}
+                  />
+                </div>
+                <h2 className={styles.projectTitle}>
+                  {featuredProject.title} - {featuredProject.company}
+                </h2>
+              </div>
               <p className={styles.projectDesc}>
                 {featuredProject.description}
               </p>
@@ -151,9 +166,20 @@ export default function Works() {
                   />
                 </div>
                 <div className={styles.cardContent}>
-                  <h3 className={styles.projectTitle}>
-                    {project.title} - {project.company}
-                  </h3>
+                  <div className={styles.projectTitleRow}>
+                    <div className={styles.projectIcon}>
+                      <Image
+                        src={project.icon}
+                        alt=""
+                        width={24}
+                        height={24}
+                        style={{ borderRadius: "8px" }}
+                      />
+                    </div>
+                    <h3 className={styles.projectTitle}>
+                      {project.title} - {project.company}
+                    </h3>
+                  </div>
                   <p className={styles.projectDesc}>{project.description}</p>
                   <div className={styles.stack}>
                     {project.stack.map((tech) => (
