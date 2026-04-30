@@ -16,7 +16,7 @@ interface Project {
   image: string;
   icon: string;
   stack: string[];
-  liveUrl: string;
+  liveUrl?: string;
   githubUrl?: string;
 }
 
@@ -106,6 +106,17 @@ const otherProjects: Project[] = [
     liveUrl: "https://aniobi.lawjun.ng/",
     githubUrl: "https://github.com/lawrencejr5/aniobi",
   },
+  {
+    slug: "gobook",
+    company: "Godfrey Okoye University",
+    title: "GoBook",
+    description:
+      "A social media platform for Godfrey Okoye University students to connect, share content, and build communities. My first real project as a software engineer.",
+    image: "/images/projects/gobook.png",
+    icon: "/images/projects/gobook-logo.jpg",
+    stack: ["PHP", "jQuery", "MySQL"],
+    githubUrl: "https://github.com/lawrencejr5/gobook",
+  },
 ];
 
 export default function Works() {
@@ -179,21 +190,23 @@ export default function Works() {
                     Source Code
                   </a>
                 )}
-                <a
-                  href={featuredProject.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.projectLink}
-                >
-                  <Image
-                    src="/images/icons/link.png"
-                    alt="Link"
-                    width={18}
-                    height={18}
-                    className={styles.linkIcon}
-                  />
-                  Visit Project
-                </a>
+                {featuredProject.liveUrl && (
+                  <a
+                    href={featuredProject.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.projectLink}
+                  >
+                    <Image
+                      src="/images/icons/link.png"
+                      alt="Link"
+                      width={18}
+                      height={18}
+                      className={styles.linkIcon}
+                    />
+                    Visit Project
+                  </a>
+                )}
               </div>
             </div>
           </div>
@@ -254,21 +267,23 @@ export default function Works() {
                         Source Code
                       </a>
                     )}
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={styles.projectLink}
-                    >
-                      <Image
-                        src="/images/icons/link.png"
-                        alt="Link"
-                        width={16}
-                        height={16}
-                        className={styles.linkIcon}
-                      />
-                      Visit Project
-                    </a>
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.projectLink}
+                      >
+                        <Image
+                          src="/images/icons/link.png"
+                          alt="Link"
+                          width={16}
+                          height={16}
+                          className={styles.linkIcon}
+                        />
+                        Visit Project
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
