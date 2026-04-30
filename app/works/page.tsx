@@ -68,6 +68,7 @@ const otherProjects: Project[] = [
     icon: "/images/projects/9jablgue-icon.png",
     stack: ["React", "Node.js", "MongoDB"],
     liveUrl: "https://9jablogue.lawjun.ng/",
+    githubUrl: "https://github.com/lawrencejr5/9jablogue",
   },
   {
     slug: "yfincs",
@@ -77,8 +78,9 @@ const otherProjects: Project[] = [
       "A professional DeFi staking platform designed for Yield Financial Services to provide secure and efficient financial solutions.",
     image: "/images/projects/yfincs.png",
     icon: "/images/projects/yfincs-icon.png",
-    stack: ["PHP", "jQuery"],
+    stack: ["PHP", "jQuery", "MySql"],
     liveUrl: "https://yfincs.com/",
+    githubUrl: "https://github.com/lawrencejr5/youhodler",
   },
   {
     slug: "yanhub",
@@ -90,6 +92,7 @@ const otherProjects: Project[] = [
     icon: "/images/projects/yanhub-icon.png",
     stack: ["React", "Node.js", "MongoDB"],
     liveUrl: "https://yanhub.lawjun.ng/",
+    githubUrl: "https://github.com/lawrencejr5/yanhub",
   },
   {
     slug: "aniobi",
@@ -101,6 +104,7 @@ const otherProjects: Project[] = [
     icon: "/images/projects/aniobi-icon.png",
     stack: ["React", "Node.js", "MongoDB"],
     liveUrl: "https://aniobi.lawjun.ng/",
+    githubUrl: "https://github.com/lawrencejr5/aniobi",
   },
 ];
 
