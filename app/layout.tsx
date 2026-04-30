@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#28282B",
 };
 
 export default function RootLayout({

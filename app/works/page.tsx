@@ -58,6 +58,50 @@ const otherProjects: Project[] = [
     liveUrl: "https://habibee.lawjun.ng/",
     githubUrl: "https://github.com/lawrencejr5/habibee",
   },
+  {
+    slug: "9jablogue",
+    company: "Lawjun Labs",
+    title: "9jablogue",
+    description:
+      "A vibrant blog platform dedicated to sharing and celebrating Nigerian content, culture, and stories with the world.",
+    image: "/images/projects/9jablogue.png",
+    icon: "/images/projects/9jablgue-icon.png",
+    stack: ["React", "Node.js", "MongoDB"],
+    liveUrl: "https://9jablogue.lawjun.ng/",
+  },
+  {
+    slug: "yfincs",
+    company: "Yield Financial Services",
+    title: "Yfincs",
+    description:
+      "A professional DeFi staking platform designed for Yield Financial Services to provide secure and efficient financial solutions.",
+    image: "/images/projects/yfincs.png",
+    icon: "/images/projects/yfincs-icon.png",
+    stack: ["PHP", "jQuery"],
+    liveUrl: "https://yfincs.com/",
+  },
+  {
+    slug: "yanhub",
+    company: "Yan Kontent Factory",
+    title: "Yanhub",
+    description:
+      "A custom management dashboard for Yan Kontent Factory to streamline video editing workflows, task assignments, and project delivery tracking.",
+    image: "/images/projects/yanhub.png",
+    icon: "/images/projects/yanhub-icon.png",
+    stack: ["React", "Node.js", "MongoDB"],
+    liveUrl: "https://yanhub.lawjun.ng/",
+  },
+  {
+    slug: "aniobi",
+    company: "Aniobi Socials",
+    title: "Aniobi",
+    description:
+      "An anonymous messaging platform where users can share public confessions or send private messages securely and anonymously.",
+    image: "/images/projects/aniobi.png",
+    icon: "/images/projects/aniobi-icon.png",
+    stack: ["React", "Node.js", "MongoDB"],
+    liveUrl: "https://aniobi.lawjun.ng/",
+  },
 ];
 
 export default function Works() {
