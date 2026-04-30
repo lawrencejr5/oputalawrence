@@ -1,0 +1,85 @@
+# Oputa Lawrence — Portfolio & Resume
+
+Oputa Lawrence is a Software & AI Engineer specialized in building high-performance mobile and web products with TypeScript. He is the founder and Lead Engineer at Lawjun Labs.
+
+## Contact Information
+- **Email:** oputalawrence@gmail.com
+- **Phone:** +2349025816161
+- **Location:** Asaba, Delta State, Nigeria
+- **Website:** https://oputalawrence.com
+- **GitHub:** https://github.com/lawrencejr5
+- **LinkedIn:** https://www.linkedin.com/in/oputa-lawrence
+
+## Professional Summary
+Software and AI Engineer with a "build-and-ship" philosophy. Graduate of Godfrey Okoye University (Computer Science, 4.15 CGPA). Focused on creating intelligent, high-impact solutions through Lawjun Labs.
+
+## Technical Skills
+- **Languages:** TypeScript, JavaScript, PHP, MySQL, SQL
+- **Frontend/Mobile:** React Native, React, Next.js, jQuery
+- **Backend/Infrastructure:** Node.js, Convex, MongoDB, Vercel, Render, Firebase, Git
+- **Tools:** Canva
+
+## Professional Experience
+
+### Lead Engineer | Lawjun Labs (My Startup)
+*May 2025 – Present*
+Architecting and shipping AI-driven products like Snoopa and Habibee. Overseeing entire product lifecycle from conceptualization to deployment of scalable mobile and web solutions using React Native, TypeScript, and Convex.
+
+### Video Editor & Developer | Yan Kontent Factory (NYSC)
+*May 2024 – April 2025*
+Built Yanhub, a custom web application to track and manage video project status. Mastered Adobe Premiere Pro for cinematography and editing.
+
+### Fullstack Developer | Nexainnova (Remote)
+*August 2023 – May 2024*
+Built and shipped production-ready applications using PHP and modern web frameworks for robust backend solutions.
+
+### Software Developer Intern | Coriftech Solutions
+*March 2021 – September 2021*
+Mastered PHP development and tutored junior students on programming basics and logic.
+
+## Projects
+
+### Snoopa
+*Featured Project*
+A conversational AI agent that tracks topics of interest across the web 24/7.
+- **Tech:** React Native, Convex
+- **URL:** https://snoopa.lawjun.ng/
+
+### Habibee
+Atomic habit builder with activity grids and AI coaching.
+- **Tech:** React Native, Convex
+- **URL:** https://habibee.lawjun.ng/
+
+### Igle
+All-in-one app for reliable rides and swift package deliveries.
+- **Tech:** React Native, Node.js, MongoDB
+- **URL:** https://igleride.com/
+
+### 9jablogue
+A vibrant blog platform for Nigerian content and culture.
+- **Tech:** React, Node.js, MongoDB
+- **URL:** https://9jablogue.lawjun.ng/
+
+### Yfincs
+DeFi staking platform for Yield Financial Services.
+- **Tech:** PHP, jQuery, MySQL
+- **URL:** https://yfincs.com/
+
+### Yanhub
+Management dashboard for video editing workflows at Yan Kontent Factory.
+- **Tech:** React, Node.js, MongoDB
+- **URL:** https://yanhub.lawjun.ng/
+
+### Aniobi
+Anonymous messaging platform for public and private confessions.
+- **Tech:** React, Node.js, MongoDB
+- **URL:** https://aniobi.lawjun.ng/
+
+### GoBook
+Final Year Project for Godfrey Okoye University. A student community social media platform.
+- **Tech:** PHP, jQuery, MySQL
+- **GitHub:** https://github.com/lawrencejr5/gobook
+
+## Education
+**Godfrey Okoye University**
+Bachelor's Degree in Computer Science (4.15 CGPA)

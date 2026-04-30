@@ -1,0 +1,160 @@
+{
+  "basics": {
+    "name": "Oputa Lawrence",
+    "label": "Software & AI Engineer",
+    "email": "oputalawrence@gmail.com",
+    "phone": "+2349025816161",
+    "url": "https://oputalawrence.com",
+    "summary": "Software and AI Engineer based in Asaba, Delta State, with a drive for building products that matter. Founder of Lawjun Labs, focusing on shipping intelligent, high-impact solutions.",
+    "location": {
+      "city": "Asaba",
+      "region": "Delta State",
+      "country": "Nigeria"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "lawrencejr5",
+        "url": "https://github.com/lawrencejr5"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "oputa-lawrence",
+        "url": "https://www.linkedin.com/in/oputa-lawrence"
+      },
+      {
+        "network": "Threads",
+        "username": "oputa_lawrence",
+        "url": "https://threads.net/@oputa_lawrence"
+      },
+      {
+        "network": "WhatsApp",
+        "username": "2349025816161",
+        "url": "https://wa.me/2349025816161"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Lawjun Labs",
+      "position": "Lead Engineer",
+      "url": "https://lawjun.ng",
+      "startDate": "2025-05-01",
+      "summary": "Architecting and shipping AI-driven products like Snoopa and Habibee. Overseeing entire product lifecycle from conceptualization to deployment of scalable mobile and web solutions using React Native, TypeScript, and Convex."
+    },
+    {
+      "name": "Yan Kontent Factory",
+      "position": "Video Editor & Developer",
+      "startDate": "2024-05-01",
+      "endDate": "2025-04-01",
+      "url": "https://yankontentfactory.com/",
+      "summary": "Creative intern during NYSC. Built Yanhub, a custom web application to track and manage video project status from shooting to final delivery."
+    },
+    {
+      "name": "Nexainnova",
+      "position": "Fullstack Developer",
+      "startDate": "2023-08-01",
+      "endDate": "2024-05-01",
+      "url": "http://nexainnova.com/",
+      "summary": "Built and shipped production-ready applications using PHP and modern web frameworks to deliver robust backend solutions."
+    },
+    {
+      "name": "Coriftech Solutions",
+      "position": "Software Developer Intern",
+      "startDate": "2021-03-01",
+      "endDate": "2021-09-01",
+      "url": "https://coriftech.com/",
+      "summary": "Intensive internship mastering PHP development and gaining first leadership experience tutoring students on programming basics."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Godfrey Okoye University",
+      "area": "Computer Science",
+      "studyType": "Bachelor's Degree",
+      "score": "4.15 CGPA"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web & Mobile Development",
+      "keywords": [
+        "TypeScript",
+        "React Native",
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "Convex",
+        "Git",
+        "PHP",
+        "MySQL",
+        "jQuery"
+      ]
+    },
+    {
+      "name": "Design",
+      "keywords": ["Canva"]
+    },
+    {
+      "name": "Deployment",
+      "keywords": ["Vercel", "Render", "Firebase"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Snoopa",
+      "description": "A conversational AI agent that tracks the topics you care about across the web 24/7.",
+      "url": "https://snoopa.lawjun.ng/",
+      "github": "https://github.com/lawrencejr5/snoopa",
+      "highlights": ["React Native", "Convex"]
+    },
+    {
+      "name": "Habibee",
+      "description": "Build atomic habits, track streaks with beautiful activity grids, and stay accountable.",
+      "url": "https://habibee.lawjun.ng/",
+      "github": "https://github.com/lawrencejr5/habibee",
+      "highlights": ["React Native", "Convex"]
+    },
+    {
+      "name": "Igle",
+      "description": "The all-in-one app for reliable rides and swift package deliveries.",
+      "url": "https://igleride.com/",
+      "github": "https://github.com/lawrencejr5/igle",
+      "highlights": ["React Native", "Node.js", "MongoDB"]
+    },
+    {
+      "name": "9jablogue",
+      "description": "A vibrant blog platform dedicated to sharing and celebrating Nigerian content.",
+      "url": "https://9jablogue.lawjun.ng/",
+      "github": "https://github.com/lawrencejr5/9jablogue",
+      "highlights": ["React", "Node.js", "MongoDB"]
+    },
+    {
+      "name": "Yfincs",
+      "description": "A professional DeFi staking platform designed for Yield Financial Services.",
+      "url": "https://yfincs.com/",
+      "github": "https://github.com/lawrencejr5/youhodler",
+      "highlights": ["PHP", "jQuery", "MySQL"]
+    },
+    {
+      "name": "Yanhub",
+      "description": "A custom management dashboard for Yan Kontent Factory video editing workflows.",
+      "url": "https://yanhub.lawjun.ng/",
+      "github": "https://github.com/lawrencejr5/yanhub",
+      "highlights": ["React", "Node.js", "MongoDB"]
+    },
+    {
+      "name": "Aniobi",
+      "description": "An anonymous messaging platform where users can share public confessions securely.",
+      "url": "https://aniobi.lawjun.ng/",
+      "github": "https://github.com/lawrencejr5/aniobi",
+      "highlights": ["React", "Node.js", "MongoDB"]
+    },
+    {
+      "name": "GoBook",
+      "description": "Social media platform for Godfrey Okoye University students. My first real project.",
+      "github": "https://github.com/lawrencejr5/gobook",
+      "highlights": ["PHP", "jQuery", "MySQL"]
+    }
+  ]
+}

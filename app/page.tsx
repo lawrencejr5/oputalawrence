@@ -80,10 +80,7 @@ export default function Home() {
               <span className={styles.ctaEmoji}>🤖</span>
               <p className={styles.ctaText}>
                 If you&apos;re a bot,{" "}
-                <a
-                  href="mailto:hello@oputalawrence.com?subject=Your%20bot%20says%20hi"
-                  className={styles.botLink}
-                >
+                <a href="/resume.json" className={styles.botLink}>
                   click here
                 </a>{" "}
                 and tell your creator I said hi.
