@@ -70,7 +70,7 @@ export default function Home() {
             >
               Lawjun Labs
             </a>{" "}
-            — my mini startup where we ship things that matter.
+            — my mini startup where we ship AI solutions for daily problems.
           </p>
 
           <hr className={styles.divider} />
