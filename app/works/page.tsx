@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "My Works — Oputa Lawrence",
   description:
-    "Projects built by Oputa Lawrence — from AI-powered web monitoring to ride-hailing and habit tracking apps.",
+    "Projects built by Oputa Lawrence — from curated e-commerce platforms and conversational AI agents to ride-hailing and habit tracking apps.",
 };
 
 interface Project {
@@ -21,16 +21,16 @@ interface Project {
 }
 
 const featuredProject: Project = {
-  slug: "snoopa",
-  company: "Lawjun Labs",
-  title: "Snoopa",
+  slug: "beembai",
+  company: "Omyann Technologies",
+  title: "Beembai",
   description:
-    "A conversational AI agent that tracks the topics you care about. From injury reports to market shifts, Snoopa monitors the front page of the web 24/7 and pings you the moment something changes. Don't search — just snoop.",
-  image: "/images/projects/snoopa_1.png",
-  icon: "/images/projects/snoopa-icon.png",
-  stack: ["React Native", "Convex"],
-  liveUrl: "https://snoopa.lawjun.ng/",
-  githubUrl: "https://github.com/lawrencejr5/snoopa",
+    "A premium curated e-commerce marketplace for thoughtfully selected lifestyle essentials, electronics, and home goods. Built with multi-vendor storefronts, dynamic category curation, and a streamlined shopping experience.",
+  image: "/images/projects/beembai.png",
+  icon: "/images/projects/beembai-icon.png",
+  stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+  liveUrl: "https://beembai.com/",
+  githubUrl: "https://github.com/lawrencejr5/beembai",
 };
 
 const otherProjects: Project[] = [
@@ -57,6 +57,18 @@ const otherProjects: Project[] = [
     stack: ["React Native", "Convex"],
     liveUrl: "https://habibee.lawjun.ng/",
     githubUrl: "https://github.com/lawrencejr5/habibee",
+  },
+  {
+    slug: "snoopa",
+    company: "Lawjun Labs",
+    title: "Snoopa",
+    description:
+      "A conversational AI agent that tracks the topics you care about. From injury reports to market shifts, Snoopa monitors the front page of the web 24/7 and pings you the moment something changes. Don't search — just snoop.",
+    image: "/images/projects/snoopa_1.png",
+    icon: "/images/projects/snoopa-icon.png",
+    stack: ["React Native", "Convex"],
+    liveUrl: "https://snoopa.lawjun.ng/",
+    githubUrl: "https://github.com/lawrencejr5/snoopa",
   },
   {
     slug: "9jablogue",

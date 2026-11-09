@@ -102,6 +102,12 @@
   ],
   "projects": [
     {
+      "name": "Beembai",
+      "description": "A premium curated e-commerce marketplace for thoughtfully selected lifestyle essentials, electronics, and home goods.",
+      "url": "https://beembai.com/",
+      "highlights": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+    },
+    {
       "name": "Snoopa",
       "description": "A conversational AI agent that tracks the topics you care about across the web 24/7.",
       "url": "https://snoopa.lawjun.ng/",

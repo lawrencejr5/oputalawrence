@@ -39,8 +39,13 @@ Mastered PHP development and tutored junior students on programming basics and l
 
 ## Projects
 
-### Snoopa
+### Beembai
 *Featured Project*
+A premium curated e-commerce marketplace for thoughtfully selected lifestyle essentials, electronics, and home goods with multi-vendor storefronts.
+- **Tech:** Next.js, React, TypeScript, Tailwind CSS
+- **URL:** https://beembai.com/
+
+### Snoopa
 A conversational AI agent that tracks topics of interest across the web 24/7.
 - **Tech:** React Native, Convex
 - **URL:** https://snoopa.lawjun.ng/

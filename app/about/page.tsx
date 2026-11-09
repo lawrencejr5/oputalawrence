@@ -78,7 +78,7 @@ export default function About() {
         <section className={styles.imageSection}>
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/me/profile_1.jpg"
+              src="/images/me/me.jpeg"
               alt="Oputa Lawrence"
               fill
               className={styles.profileImage}
