@@ -11,7 +11,7 @@ const socials = [
   {
     name: "LinkedIn",
     icon: "/images/icons/linkedin.png",
-    href: "https://www.linkedin.com/in/oputa-lawrence",
+    href: "https://www.linkedin.com/in/oputa-lawrence-hacked",
   },
   {
     name: "Email",
